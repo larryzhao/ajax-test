@@ -1,0 +1,13 @@
+[
+  <% @badges.each do |badge| -%>
+    { 
+      "badge_id": "<%= badge["badge_id"].to_json -%>",
+      "rank": "<%= badge["rank"].to_json -%>",
+      "name": "<%= badge["name"].to_json -%>",
+      "description": "<%= badge["description"].to_json -%>",
+      "award_count": "<%= badge["award_count"].to_json -%>",
+      "tag_based": "<%= badge["tag_based"].to_json -%>",
+      "badges_recipients_url": "<%= badge["badges_recipients_url"].to_json -%>"
+    }<%= ',' if badge != @badges.last -%>
+  <% end -%>
+]

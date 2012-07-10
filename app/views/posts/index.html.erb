@@ -1,0 +1,21 @@
+<div id='title'>
+  <h1>Here are samples of doing ajax in rails.</h1>
+</div>
+
+<div class='section'>
+  <h2>1. Get a bundle of messages in json. </h2><button id="button-get-json">Get data in json</button>
+  <ul>
+  </ul>
+</div>
+
+<div class='section'>
+  <h2>2. Show a bundle of messages in js. </h2><button id="button-get-js">Get data in js</button>
+  <ul>
+  </ul>
+</div>
+
+<div class='section'>
+  <h2>3. Call the first test with a remote link. </h2><%= link_to 'Get data in json', badges_path(), :remote => "true", :"data-type" => "json", :id => 'link-get-json' %>
+  <ul>
+  </ul>
+</div>
