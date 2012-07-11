@@ -7,7 +7,7 @@ $ ->
   $('#button-get-json').on 'click', () ->
     $.get '/posts/badges.json', (data) ->
       $.each data, (index,badge) -> 
-        ul = $(this).next();
+        ul = $('#button-get-json').next();
         ul.append $("<li>#{badge.description}</li>")
 
   $('#button-get-js').on 'click', () ->
